@@ -5,6 +5,7 @@ package com.tang.util;
 import java.io.File;
 
 /**
+ * 文件工具类
  * @author TW
  */
 public class FileUtil {

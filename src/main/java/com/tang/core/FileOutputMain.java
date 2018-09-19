@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.nio.file.Files;
 
 /**
+ * 文件主类
  * @author TW
  */
 public class FileOutputMain {
@@ -18,12 +19,14 @@ public class FileOutputMain {
     //指定要提取的关键字
     private final static String SPECIFY_NAME = "readme" ;
 
+
+
     public static void main(String[] args){
-
-        //提取文件夹
+        //提取文件
         extractFileForFolder("I:\\myTest");
-
     }
+
+
 
     /**
      * 提取文件夹中指定的部分文件
