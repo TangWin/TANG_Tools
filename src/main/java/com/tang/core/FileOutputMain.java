@@ -23,7 +23,7 @@ public class FileOutputMain {
 
     public static void main(String[] args){
         //提取文件
-        extractFileForFolder("I:\\myTest");
+        extractFileForFolder("I:\\BaiduNetdiskDownload\\01 java 基础");
     }
 
 
@@ -33,6 +33,7 @@ public class FileOutputMain {
      * @param folderPath
      */
     public static void extractFileForFolder(String folderPath){
+        System.out.println("开始读取：");
         //读取文件
         File sourceFile = null ;
         try {
@@ -42,6 +43,7 @@ public class FileOutputMain {
         }
         //递归读取文件
         recursionFile(sourceFile);
+        System.out.println("读取完成！");
     }
 
     /**
