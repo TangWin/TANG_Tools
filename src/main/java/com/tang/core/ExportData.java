@@ -31,7 +31,7 @@ public class ExportData {
         StringBuilder sb = new StringBuilder();
 
         for (UsersArches usersArches : usersArchesList) {
-            sb.append("UPDATE  T_USERSARCHES SET " + headRow.get(1) + "= '" + usersArches.getNickname() + "', ");
+            sb.append("UPDATE  T_USERS_ARCHIVES SET " + headRow.get(1) + "= '" + usersArches.getNickname() + "', ");
             sb.append(headRow.get(2) + " = '" + usersArches.getHeadPicture() + "'");
             sb.append(" WHERE "+headRow.get(0)+ "= " + usersArches.getUserId() + ";\n");
         }
